@@ -69,7 +69,7 @@ Le joueur 5 joue le rôle SUPPORT (5)
 préférence de chaque joueur : 2 ou 3 rôles
 fonction à écrire qui calcule la préférence du joueur pour chaque  rôle + IHM
 ```
-sij = satisfaction du jour i pour le rôle j
+sij = satisfaction du joueur i pour le rôle j
 ```
 
 
@@ -98,7 +98,7 @@ x51 + x52 + x53 + x54 + x55 = 1
 
 calcul de la satisfaction : 
 ```
-z = somme pour i et j des sij 
+z = somme pour i et j des xij*sij 
 ```
 on cherche à maximiser z
 
