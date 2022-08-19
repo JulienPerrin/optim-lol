@@ -2,14 +2,62 @@
 
 Ce projet contient un algorithme d'optimisation combinatoire qui détermine quel joueur doit jouer quel rôle à LOL. 
 
-## Installation
+Le programme existe en deux versions, une version en Python, et une autre version en RUST. 
+
+## Lancement du programme
+
+### En Python
 
 Cloner le projet. 
 Avoir Python3 installé : https://www.python.org/downloads/
 
-Installer oortools : `python -m pip install --upgrade --user ortools`
+Installer ortools : `python -m pip install --upgrade --user ortools`
 
 Lancer la commande : `python3 test.py` à la racine du projet pour exécuter l'exemple
+
+Résultat :
+```
+$ python3 test.py 
+Number of variables = 25
+Objective value = 4.0
+Le joueur 1 joue le rôle TOP (1)
+Le joueur 2 joue le rôle BOTTOM (4)
+Le joueur 3 joue le rôle MID (3)
+Le joueur 4 joue le rôle JUNGLE (2)
+Le joueur 5 joue le rôle SUPPORT (5)
+
+Problem solved in 2.000000 milliseconds
+Problem solved in 0 iterations
+Problem solved in 0 branch-and-bound nodes
+```
+
+### En RUST
+
+1. Avoir RUST installé sur son PC. 
+2. Lancer la commande `cargo run`
+
+Résultat : 
+```
+$ cargo run
+...
+Result - Optimal solution found
+
+Objective value:                5.00000000
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             0.00
+Time (Wallclock seconds):       0.00
+
+Total time (CPU seconds):       0.00   (Wallclock seconds):       0.00
+
+Status Finished
+obj_value 5.0
+Le joueur 1 joue le rôle TOP (1)
+Le joueur 2 joue le rôle JUNGLE (2)
+Le joueur 3 joue le rôle MID (3)
+Le joueur 4 joue le rôle BOTTOM (4)
+Le joueur 5 joue le rôle SUPPORT (5)
+```
 
 ## Principe
 

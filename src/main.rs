@@ -103,9 +103,10 @@ fn main() {
         for j in 1..NB_ROLES + 1 {
             if sol.col(binaries.get(&(i as u8), &(j as u8))) == 1 as f64 {
                 println!(
-                    "joueur {:#?} plays role {:#?}",
+                    "Le joueur {:#?} joue le rôle {:#?} ({})",
                     &(i as u8) + 1,
-                    Role::from_u8(j as u8)
+                    Role::from_u8(j as u8),
+                    j as u8
                 );
             }
         }
